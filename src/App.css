@@ -1,0 +1,27 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  background-color: #00132D;
+  color: #FDFEFE;
+  max-height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,h2,h3,h4 {
+  font-weight: lighter;
+}
+
+.App {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

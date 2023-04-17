@@ -1,0 +1,22 @@
+
+
+
+
+header {
+    padding: 60px 0px 60px 0px;
+}
+
+
+header h1 {
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 span:first-of-type {
+    font-size: 20px;
+}
+
+header h1 span:nth-of-type(2) {
+    font-size: 35px;
+}
