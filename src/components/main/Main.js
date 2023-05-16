@@ -35,21 +35,23 @@ const Main = () => {
 
     return(
         <main>
-            <p className={messageActive === true ? `complete-message down` : 'complete-message'}>{messages[Math.floor(Math.random() * 3)]}</p>
-            <h2>To do</h2>
-            <ul className="todo-list">
-                {toDoList.map((todo) => {
-                    return(
-                        <li key={todo.id} style={{backgroundColor: todo.backgroundColor}} className="todo-item">
-                            <p>{todo.value}</p>
-                            <input className="checker" value={todo.id} type="checkbox" onChange={() => {handleCheck(todo.id)}}/>
-                        </li>
-                    )
-                })}
-            </ul>
-            <form onSubmit={addToDoHandler}>
-                <input name="todo" maxLength="30" type="text" placeholder="New to do..."/>
+            <div className="content-container">
+                <p className={messageActive === true ? `complete-message down` : 'complete-message'}>{messages[Math.floor(Math.random() * 3)]}</p>
+                <h2>To do</h2>
+                <ul className="todo-list">
+                    {toDoList.map((todo) => {
+                        return(
+                            <li key={todo.id} style={{backgroundColor: todo.backgroundColor}} className="todo-item">
+                                <p>{todo.value}</p>
+                                <input className="checker" value={todo.id} type="checkbox" onChange={() => {handleCheck(todo.id)}}/>
+                            </li>
+                        )
+                    })}
+                </ul>
+                <form onSubmit={addToDoHandler}>
+                    <input name="todo" maxLength="30" type="text" placeholder="New to do..."/>
             </form>
+            </div>
         </main>
     );
 }

@@ -3,9 +3,17 @@ main {
     position: relative;
     height: 600px;
     max-height: 100%;
-    max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
 }
 
 .todo-list {
@@ -33,7 +41,8 @@ main form {
 }
 
 form {
-    width: 100%;
+    width: 500px;
+    max-width: 90%;
 }
 
 form input {
